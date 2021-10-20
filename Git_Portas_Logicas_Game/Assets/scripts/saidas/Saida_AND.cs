@@ -8,6 +8,8 @@ public class Saida_AND : MonoBehaviour
     public SpriteRenderer spriteRenderer;
     public button bt;
     public button_02 bt2;
+    public button_03 bt3;
+    public button_04 bt4;
     void Start()
     {
         
@@ -17,9 +19,11 @@ public class Saida_AND : MonoBehaviour
 
     void Update()
     {
-        //encontrando  cada botão
+        //Definindo os botões
         bt = FindObjectOfType<button>();
         bt2 = FindObjectOfType<button_02>();
+        bt3 = FindObjectOfType<button_03>();
+        bt4 = FindObjectOfType<button_04>();
 
         if ((bt.saida01) * (bt2.saida02) < 1)
         {
