@@ -11,16 +11,14 @@ using UnityEngine;
 
 public class porta_AND : MonoBehaviour
 {
-    public Sprite saida0, saida1;
-    public SpriteRenderer spriteRenderer;
+    
     public button bt;
     public button_02 bt2;
     public button_03 bt3;
     public button_04 bt4;
+    public int lState = 0;
     void Start()
     {
-        
-        spriteRenderer = this.GetComponent<SpriteRenderer>();
     }
 
 
@@ -34,11 +32,11 @@ public class porta_AND : MonoBehaviour
 
         if ((bt.saida01) * (bt2.saida02) < 1)
         {
-            spriteRenderer.sprite = saida0;
+            lState = 0;
         }
         else if ((bt.saida01) * (bt2.saida02) >= 1)
         {
-            spriteRenderer.sprite = saida1;
+            lState = 1;
         }
 
     }
