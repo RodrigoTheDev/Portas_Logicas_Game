@@ -2,7 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Saida_OU : MonoBehaviour
+//PORTA OR
+// A | B | S 
+// 0 | 0 | 0
+// 0 | 1 | 1
+// 1 | 0 | 1
+// 1 | 1 | 0
+
+public class porta_XOR : MonoBehaviour
 {
     public Sprite saida0, saida1;
     public SpriteRenderer spriteRenderer;
@@ -13,7 +20,7 @@ public class Saida_OU : MonoBehaviour
 
     void Start()
     {
-        
+
         spriteRenderer = this.GetComponent<SpriteRenderer>();
     }
 
@@ -26,14 +33,13 @@ public class Saida_OU : MonoBehaviour
         bt3 = FindObjectOfType<button_03>();
         bt4 = FindObjectOfType<button_04>();
 
-        if ((bt.saida01) +(bt2.saida02) < 1)
+        if ((bt.saida01) == (bt2.saida02))
         {
             spriteRenderer.sprite = saida0;
         }
-        else if ((bt.saida01) + (bt2.saida02) >= 1)
+        else if ((bt.saida01) != (bt2.saida02))
         {
             spriteRenderer.sprite = saida1;
         }
-
     }
 }
