@@ -218,11 +218,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 121a26e41e52aa1428c0debe77f1aa61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  saida0: {fileID: -304652457996361302, guid: df2e6dee39de80641a432c48324654a2, type: 3}
-  saida1: {fileID: 3440074144648937413, guid: df2e6dee39de80641a432c48324654a2, type: 3}
-  spriteRenderer: {fileID: 0}
   bt: {fileID: 0}
   bt2: {fileID: 0}
+  bt3: {fileID: 0}
+  bt4: {fileID: 0}
+  lState: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
