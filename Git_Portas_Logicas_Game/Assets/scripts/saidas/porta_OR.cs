@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 //PORTA OR
 // A | B | S 
 // 0 | 0 | 0
@@ -18,16 +20,17 @@ public class porta_OR : MonoBehaviour
     public int lState = 0;
     void Start()
     {
-    }
-
-
-    void Update()
-    {
         //Definindo os botões
         bt = FindObjectOfType<button>();
         bt2 = FindObjectOfType<button_02>();
         bt3 = FindObjectOfType<button_03>();
         bt4 = FindObjectOfType<button_04>();
+    }
+
+
+    void Update()
+    {
+        
 
         if ((bt3.saida03) +(bt4.saida04) < 1)
         {
