@@ -13,6 +13,7 @@ using UnityEngine;
 
 public class porta_OR : MonoBehaviour
 {
+    public control ctrl;
     public button bt;
     public button_02 bt2;
     public button_03 bt3;
@@ -20,6 +21,7 @@ public class porta_OR : MonoBehaviour
     public int lState = 0;
     void Start()
     {
+        ctrl = FindObjectOfType<control>();
         //Definindo os botões
         bt = FindObjectOfType<button>();
         bt2 = FindObjectOfType<button_02>();
@@ -41,5 +43,11 @@ public class porta_OR : MonoBehaviour
             lState = 1;
         }
 
+        if (lState == 1)
+        {
+            ctrl.currentLevel = 2;
+            Destroy(bt3.GetComponent<BoxCollider2D>());
+            Destroy(bt4.GetComponent<BoxCollider2D>());
+        }
     }
 }

@@ -13,6 +13,7 @@ public class Saida_OR : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         lOr = FindObjectOfType<porta_OR>();
         spriteRenderer = this.GetComponent<SpriteRenderer>();
     }
@@ -20,6 +21,8 @@ public class Saida_OR : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
         if (lOr.lState == 0)
         {
             spriteRenderer.sprite = saida0;

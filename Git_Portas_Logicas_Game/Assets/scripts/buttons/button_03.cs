@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//Botão n:2
+//Botão n:3
 public class button_03 : MonoBehaviour
 {
     public Sprite estado0, estado1;

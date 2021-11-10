@@ -7,6 +7,7 @@ public class control : MonoBehaviour
     public float movespeed = 5f;
     public Rigidbody2D rb;
     public Animator animator;
+    public int currentLevel = 0;
     Vector2 movement;
 
     private void Update()
