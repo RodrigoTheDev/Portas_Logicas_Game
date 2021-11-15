@@ -6,15 +6,15 @@ using UnityEngine;
 
 public class Saida_OR : MonoBehaviour
 {
-    public Sprite saida0, saida1;
-    public SpriteRenderer spriteRenderer;
+    public Sprite saida0, saida1; //sprites importáveis
+    public SpriteRenderer spriteRenderer; //renderizador de sprite
     public porta_OR lOr;
 
     // Start is called before the first frame update
     void Start()
     {
         
-        lOr = FindObjectOfType<porta_OR>();
+        lOr = FindObjectOfType<porta_OR>(); //variável que puxa os valores do script prota_or
         spriteRenderer = this.GetComponent<SpriteRenderer>();
     }
 

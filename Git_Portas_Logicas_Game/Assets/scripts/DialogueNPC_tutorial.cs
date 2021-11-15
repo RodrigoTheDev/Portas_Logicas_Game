@@ -7,6 +7,7 @@ public class DialogueNPC_tutorial : MonoBehaviour
     public Sprite profile;
     public string[] speechTxt;
     public string actorName;
+    private int spcblock = 1;
 
     public LayerMask playerLayer;
     public float radius;
@@ -26,9 +27,10 @@ public class DialogueNPC_tutorial : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && onRadius)
+        if(Input.GetKeyDown(KeyCode.Space) && onRadius && spcblock == 1)
         {
             dc.Speech(profile, speechTxt, actorName);
+            spcblock = 0;
         }
     }
 

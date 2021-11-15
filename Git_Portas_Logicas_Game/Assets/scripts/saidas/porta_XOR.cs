@@ -24,7 +24,7 @@ public class porta_XOR : MonoBehaviour
 
     void Update()
     {
-        //Definindo os botões
+        //Definindo uma variável para as referências dos scripts
         bt = FindObjectOfType<button>();
         bt2 = FindObjectOfType<button_02>();
         bt3 = FindObjectOfType<button_03>();

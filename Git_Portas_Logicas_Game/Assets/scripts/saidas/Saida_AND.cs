@@ -10,14 +10,12 @@ public class Saida_AND : MonoBehaviour
     public SpriteRenderer spriteRenderer;
     public porta_AND lAnd;
 
-    // Start is called before the first frame update
     void Start()
     {
-        lAnd = FindObjectOfType<porta_AND>();
+        lAnd = FindObjectOfType<porta_AND>(); //variável que puxa os valores do script porta_AND
         spriteRenderer = this.GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(lAnd.lState == 0)

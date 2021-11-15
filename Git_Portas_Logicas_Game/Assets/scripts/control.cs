@@ -17,7 +17,7 @@ public class control : MonoBehaviour
 
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
-        animator.SetFloat("speed", movement.sqrMagnitude);  
+        animator.SetFloat("speed", movement.sqrMagnitude);
     }
 
     private void FixedUpdate()

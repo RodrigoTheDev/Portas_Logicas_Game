@@ -22,7 +22,7 @@ public class porta_OR : MonoBehaviour
     void Start()
     {
         ctrl = FindObjectOfType<control>();
-        //Definindo os botões
+        //Definindo uma variável para as referências dos scripts
         bt = FindObjectOfType<button>();
         bt2 = FindObjectOfType<button_02>();
         bt3 = FindObjectOfType<button_03>();
