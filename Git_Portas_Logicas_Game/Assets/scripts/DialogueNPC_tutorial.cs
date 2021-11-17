@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DialogueNPC_tutorial : MonoBehaviour
 {
+    public DESTRUIR alert;
     public Sprite profile;
     public string[] speechTxt;
     public string actorName;
@@ -17,6 +18,7 @@ public class DialogueNPC_tutorial : MonoBehaviour
 
     private void Start()
     {
+        alert = FindObjectOfType<DESTRUIR>();
         dc = FindObjectOfType<dialogueControl>();
     }
 
@@ -30,6 +32,7 @@ public class DialogueNPC_tutorial : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space) && onRadius && spcblock == 1)
         {
             dc.Speech(profile, speechTxt, actorName);
+            alert.pressionado = true;
             spcblock = 0;
         }
     }

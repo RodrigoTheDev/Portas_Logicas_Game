@@ -7,6 +7,7 @@ public class door : MonoBehaviour
 {
     public control ctrl; //variável que puxa valores do script control
     public SpriteRenderer sr;
+    public BoxCollider2D bc2d;
 
     public int lvlunlock = 2; //lvl é a variável que armazena o valor requerido para que essa porta se abra
     public string lvlname; //o nome da cena que essa porta deve levar
@@ -14,9 +15,11 @@ public class door : MonoBehaviour
 
     private void Start()
     {
+        bc2d = GetComponent<BoxCollider2D>();
         sr = GetComponent<SpriteRenderer>();
         ctrl = FindObjectOfType<control>();
 
+        bc2d.enabled = false;
         sr.enabled = false;
     }
 
@@ -26,6 +29,7 @@ public class door : MonoBehaviour
         // se a currentLevel(variável do script control) for igual a lvlunlock, a porta surge
         if(ctrl.currentLevel == lvlunlock)
         {
+            bc2d.enabled = true;
             sr.enabled = true;
         }
     }

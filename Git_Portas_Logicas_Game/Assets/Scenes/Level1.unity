@@ -398,7 +398,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 57ad486d3df98a143913f4c39036ad9c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -657,7 +657,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 802620783849978410, guid: 49248af82fbdbd744b3245024cab8f9e, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 802620783849978410, guid: 49248af82fbdbd744b3245024cab8f9e, type: 3}
       propertyPath: m_LocalScale.x
@@ -673,7 +673,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 802620783849978410, guid: 49248af82fbdbd744b3245024cab8f9e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.81
+      value: -3.829
       objectReference: {fileID: 0}
     - target: {fileID: 802620783849978410, guid: 49248af82fbdbd744b3245024cab8f9e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -713,7 +713,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 802620783849978411, guid: 49248af82fbdbd744b3245024cab8f9e, type: 3}
       propertyPath: m_SortingOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49248af82fbdbd744b3245024cab8f9e, type: 3}
@@ -1389,7 +1389,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 57ad486d3df98a143913f4c39036ad9c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1564,7 +1564,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1841116525684657217, guid: 7b8bf3347afa7a54e9d3655d75a55236, type: 3}
       propertyPath: m_SortingOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1841116525684657218, guid: 7b8bf3347afa7a54e9d3655d75a55236, type: 3}
       propertyPath: m_Name
@@ -1739,7 +1739,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6947797878102490150, guid: 03b835c42cbd98b409af952749278b1d, type: 3}
       propertyPath: m_SortingOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6947797878102490151, guid: 03b835c42cbd98b409af952749278b1d, type: 3}
       propertyPath: m_RootOrder
