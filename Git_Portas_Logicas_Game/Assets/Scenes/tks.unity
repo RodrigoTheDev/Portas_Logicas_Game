@@ -656,8 +656,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Criado por: Carlos Cesar, Rodrigo Capucho, S\xE9rgio Leonardo, Tiago Lino,
-    Victor Aar\xE3o, Galv\xE3o Bueno e Thiago Ventura"
+  m_Text: "Criado por: Carlos Cesar, Liandra Aurora, Rodrigo Capucho, S\xE9rgio Leonardo,
+    Tiago Lino, Victor Aar\xE3o"
 --- !u!222 &1701569647
 CanvasRenderer:
   m_ObjectHideFlags: 0
