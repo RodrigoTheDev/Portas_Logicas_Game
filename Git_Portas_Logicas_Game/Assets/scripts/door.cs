@@ -12,9 +12,13 @@ public class door : MonoBehaviour
     public int lvlunlock = 2; //lvl é a variável que armazena o valor requerido para que essa porta se abra
     public string lvlname; //o nome da cena que essa porta deve levar
 
+    public Animator transitionAnim;
 
     private void Start()
     {
+
+        
+
         bc2d = GetComponent<BoxCollider2D>();
         sr = GetComponent<SpriteRenderer>();
         ctrl = FindObjectOfType<control>();
@@ -36,6 +40,13 @@ public class door : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        SceneManager.LoadScene(lvlname);
+        StartCoroutine(carregaCena());
     } //ao colidir, essa porta nos leva à fase que tem o nome inserido na string lvlname
+
+    IEnumerator carregaCena()
+    {
+        transitionAnim.SetTrigger("end");
+        yield return new WaitForSeconds(0.5f);
+        SceneManager.LoadScene(lvlname);
+    }
 }
